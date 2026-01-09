@@ -1,13 +1,13 @@
 class Rdos < Formula
   desc "R-DOS: A modern TUI file manager inspired by Q-DOS II, written in Rust"
   homepage "https://github.com/thrashr888/QDOS"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thrashr888/QDOS/releases/download/v0.9.0/rdos-macos-aarch64"
-      sha256 "7df6892de3661e735cf859f364c39544d8553f9add995700449bea60d382eb8b"
+      url "https://github.com/thrashr888/QDOS/releases/download/v0.10.0/rdos-macos-aarch64"
+      sha256 "ee4ff07d6eb22efec858bb10477e0a841c667a3e7245755cc90904ae04873dfd"
 
       def install
         bin.install "rdos-macos-aarch64" => "rdos"
@@ -15,12 +15,9 @@ class Rdos < Formula
     end
 
     on_intel do
-      url "https://github.com/thrashr888/QDOS/releases/download/v0.9.0/rdos-macos-x86_64"
-      sha256 "cb20fc4653ca734440e1696353f68efc1e6aca7fe4c49cd026714ec5bbf1de5c"
-
-      def install
-        bin.install "rdos-macos-x86_64" => "rdos"
-      end
+      # Intel Mac builds are no longer provided due to unreliable GitHub Actions runners.
+      # Users on Intel Macs can build from source: cargo install --git https://github.com/thrashr888/QDOS
+      odie "Intel Mac binaries are no longer provided. Please build from source or use an Apple Silicon Mac."
     end
   end
 
