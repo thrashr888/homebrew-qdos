@@ -1,13 +1,13 @@
 class Rdos < Formula
   desc "R-DOS: A modern TUI file manager inspired by Q-DOS II, written in Rust"
   homepage "https://github.com/thrashr888/QDOS"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thrashr888/QDOS/releases/download/v0.12.0/rdos-macos-aarch64"
-      sha256 "1344e8dd46cce1a0798d8e66a560d4f3a33b4d9f000ef45d82827b548b996c11"
+      url "https://github.com/thrashr888/QDOS/releases/download/v0.13.0/rdos-macos-aarch64"
+      sha256 "2f3c67d488bb30cd75f8f63b444ea4cca551d79911081965c7dbadc9ac5af9da"
 
       def install
         bin.install "rdos-macos-aarch64" => "rdos"
