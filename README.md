@@ -1,42 +1,17 @@
-# Homebrew Tap for R-DOS
+# This tap has moved
 
-This is the official Homebrew tap for [R-DOS](https://github.com/thrashr888/QDOS), a modern TUI file manager inspired by Q-DOS II, written in Rust.
+This tap has been consolidated into [thrashr888/homebrew-tap](https://github.com/thrashr888/homebrew-tap).
 
-## Installation
-
-```bash
-brew tap thrashr888/qdos
-brew install rdos
-```
-
-Or install directly:
+## Migration
 
 ```bash
-brew install thrashr888/qdos/rdos
-```
-
-## Usage
-
-After installation, run:
-
-```bash
-rdos
-```
-
-## Updating
-
-```bash
-brew upgrade rdos
-```
-
-## Uninstalling
-
-```bash
-brew uninstall rdos
+# Remove this tap
 brew untap thrashr888/qdos
+
+# Add the new unified tap
+brew tap thrashr888/tap
+
+# Reinstall
+brew install thrashr888/tap/qdos
 ```
 
-## More Information
-
-- [R-DOS Repository](https://github.com/thrashr888/QDOS)
-- [Releases](https://github.com/thrashr888/QDOS/releases)
