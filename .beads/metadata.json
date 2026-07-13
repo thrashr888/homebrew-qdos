@@ -1,4 +1,7 @@
 {
-  "database": "beads.db",
-  "jsonl_export": "issues.jsonl"
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "homebrew_qdos",
+  "project_id": "f433325a-2a6e-45b4-8ee6-48869a24aa96"
 }
