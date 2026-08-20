@@ -4,6 +4,9 @@ class Rdos < Formula
   version "0.20.0"
   license "MIT"
 
+  # This tap is deprecated. New releases are published to thrashr888/homebrew-tap.
+  deprecate! date: "2026-08-19", because: "has moved to the thrashr888/tap tap"
+
   # Core dependencies for full functionality
   depends_on "git"
   depends_on "ripgrep"
@@ -33,6 +36,13 @@ class Rdos < Formula
 
   def caveats
     <<~EOS
+      This tap (thrashr888/qdos) is deprecated and will not receive new releases.
+      Migrate to the unified tap:
+
+        brew untap thrashr888/qdos
+        brew tap thrashr888/tap
+        brew install thrashr888/tap/rdos
+
       R-DOS includes plugins that benefit from additional tools:
 
       Developer tools (optional):
